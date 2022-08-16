@@ -3,11 +3,11 @@
 
 import sort
 
-# test = [3, 11, 0, 2, 55, 101, 32]
+test = [3, 11, 0, 2, 55, 55, 101, 32]
 
-# print(test)
+print(test)
 
-# sort.bubble_sort(test)
+sort.insert_sort(test)
 
-# print(test)
+print(test)
 

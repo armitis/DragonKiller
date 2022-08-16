@@ -15,4 +15,10 @@ def bubble_sort(array):
 def insert_sort(array):
 	length = len(array)
 	for x in range(1, length):
-		
+		for y in range(x - 1, -1, -1):
+			if array[y + 1] < array[y]:
+				temp = array[y + 1]
+				array[y + 1] = array[y]
+				array[y] = temp
+			else:
+				break
