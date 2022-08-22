@@ -22,3 +22,12 @@ def insert_sort(array):
 				array[y] = temp
 			else:
 				break
+
+def select_sort(array):
+	length = len(array)
+	for x in range(0, length - 1):
+		for y in range(x + 1, length):
+			if array[x] > array[y]:
+				temp = array[x]
+				array[x] = array[y]
+				array[y] = temp
